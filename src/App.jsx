@@ -1,5 +1,7 @@
 import React from 'react';
 
+const publicAsset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 export default function App() {
   return (
     <div className="min-h-screen bg-zinc-900 text-zinc-100 font-sans selection:bg-indigo-500 selection:text-white">
@@ -25,7 +27,7 @@ export default function App() {
         <section id="about" className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center bg-zinc-800/50 border border-zinc-800 rounded-2xl p-8 shadow-xl">
           <div className="flex justify-center md:justify-start">
             <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-indigo-500/50 shadow-lg bg-zinc-700 flex items-center justify-center text-xs text-zinc-400">
-              <img src="/pictures/profile2.jpeg" alt="Ryan Mabunda" className="w-full h-full object-cover" />
+              <img src={publicAsset('pictures/profile2.jpeg')} alt="Ryan Mabunda" className="w-full h-full object-cover" />
             </div>
           </div>
           <div className="md:col-span-2 space-y-4 text-center md:text-left">
@@ -94,13 +96,13 @@ export default function App() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="rounded-lg overflow-hidden border border-zinc-700 bg-zinc-900 aspect-video flex items-center justify-center">
-                <img src="/pictures/Screenshot 2026-06-12 191305.png" alt="S.R.O.M 1" className="w-full h-full object-cover" />
+                <img src={publicAsset('pictures/Screenshot 2026-06-12 191305.png')} alt="S.R.O.M 1" className="w-full h-full object-cover" />
               </div>
               <div className="rounded-lg overflow-hidden border border-zinc-700 bg-zinc-900 aspect-video flex items-center justify-center">
-                <img src="/pictures/project-3.jpeg" alt="S.R.O.M 2" className="w-full h-full object-cover" />
+                <img src={publicAsset('pictures/project-3.jpeg')} alt="S.R.O.M 2" className="w-full h-full object-cover" />
               </div>
               <div className="rounded-lg overflow-hidden border border-zinc-700 bg-zinc-900 aspect-video flex items-center justify-center">
-                <img src="/pictures/Screenshot 2026-06-12 191406.png" alt="S.R.O.M 3" className="w-full h-full object-cover" />
+                <img src={publicAsset('pictures/Screenshot 2026-06-12 191406.png')} alt="S.R.O.M 3" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -115,13 +117,13 @@ export default function App() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="rounded-lg overflow-hidden border border-zinc-700 bg-zinc-900 aspect-video flex items-center justify-center">
-                <img src="/pictures/youtube3.png" alt="YouTube Stream 1" className="w-full h-full object-cover" />
+                <img src={publicAsset('pictures/youtube3.png')} alt="YouTube Stream 1" className="w-full h-full object-cover" />
               </div>
               <div className="rounded-lg overflow-hidden border border-zinc-700 bg-zinc-900 aspect-video flex items-center justify-center">
-                <img src="/pictures/youtube2.png" alt="YouTube Stream 2" className="w-full h-full object-cover" />
+                <img src={publicAsset('pictures/youtube2.png')} alt="YouTube Stream 2" className="w-full h-full object-cover" />
               </div>
               <div className="rounded-lg overflow-hidden border border-zinc-700 bg-zinc-900 aspect-video flex items-center justify-center">
-                <img src="/pictures/youtube1.png" alt="YouTube Stream 3" className="w-full h-full object-cover" />
+                <img src={publicAsset('pictures/youtube1.png')} alt="YouTube Stream 3" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
